@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "_font";
+@import "_mixin";
+@import "_space";
+
+/*==========Common CSS ==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden !important;
+    min-height: 100vh;
+}
+
+[class*="col-"] {
+    position: relative;
+}
+
+:root {
+    --body_bg: #161a23;
+    --primary_color: #7d4fe9;
+    // --secondary_color: #3091fe;
+    --secondary_color: #2672e9;
+    --pink_color: #e150e7;
+    --yellow_color: #ffda03;
+    // --grey_color: #7c8496;
+    --grey_color: #868b94;
+    --green_color: #0acc86;
+    --dark_color: #313344;
+    --white_color: #fff;
+    --red_color: #f65164;
+    --input_placeholder_color: #7c8496;
+    --input_bg: #161a23;
+    --input_border_color: #363636;
+    --header_color: #222430;
+    --border_color: rgb(255 255 255 / 10%);
+    --hr_color: #e4e2e2;
+
+    --top_header_height: 4.4795rem;
+    --bottom_header_height: 2.7997rem;
+    --header_height: calc(var(--top_header_height) + var(--bottom_header_height));
+    --sidebar_width: 13.1586rem;
+    --sidebar_close_width: 4.9275rem;
+    --body_gap: 2.2398rem;
+    --border_radius: 0.448rem;
+    --speed: 0.25s;
+    --body_font: "Golos Text", sans-serif;
+    --font_size: calc(14px + 4 * (100vw - #{$display_screen}px) / 480);
+    font-size: var(--font_size);
+
+    // Admin Root
+    --admin-side-bar-width: 280px;
+    --admin-body-space: 0;
+    --admin-header-height: 80px;
+    --admin_body_font: "Poppins", sans-serif;
+
+    @include display_screen {
+        --font_size: calc(12.9996px + 3 * (100vw - #{$large_tablet_screen}px) / 415);
+    }
+
+    @include large_tablet_screen {
+        --font_size: calc(14px + 2 * (100vw - #{$tablet_screen}px) / 255);
+        --top_header_height: 3.9756rem;
+        --header_height: var(--top_header_height);
+        --bottom_header_height: 4.4796rem;
+        --body_gap: 1.36rem;
+    }
+
+    @include tablet_screen {
+        --font_size: calc(12.5px + 2 * (100vw - #{$mobile_screen}px) / 343);
+        --top_header_height: 4.4796rem;
+    }
+
+    @include mobile_screen {
+        --font_size: calc(12px + 2 * (100vw - 320px) / 104);
+    }
+
+    @media (max-width: 1499px) {
+        --admin-side-bar-width: 240px;
+        --admin-header-height: 60px;
+    }
+
+    @media (max-width: 1366px) {
+        --admin-side-bar-width: 220px;
+    }
+
+    @media (max-width: 991px) {
+        --admin-side-bar-width: 0;
+        --admin-header-height: 80px;
+    }
+}
+
+@import "_front";
+
+// Admin Style
+@import "_admin";

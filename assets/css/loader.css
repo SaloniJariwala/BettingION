@@ -1,0 +1,33 @@
+.page_loader {
+    --size: 100%;
+    --position: 0;
+    position: fixed;
+    top: var(--position);
+    left: var(--position);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    z-index: 99999;
+    background: #161a23;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.page_loader i {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.light_mode .page_loader {
+    background-color: #eef2ff;
+}
+
+.light_mode .page_loader i {
+    color: #313344;
+}

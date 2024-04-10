@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"],
+            "@/frontend/common/*": ["./components/frontend/common/*"],
+            "@/frontend/images/*": ["./assets/frontend/images/*"],
+            "@/frontend/fonts/*": ["./assets/frontend/fonts/*"],
+            "@/frontend/ui/*": ["./components/frontend/UI/*"],
+            "@/api/*": ["./pages/api/*"]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.bettingion.com/</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/login</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/deposit</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/casino</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/live-dealer</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/virtual-sports</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/casino?gameType=CrashGames</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/lost-password</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/transfer</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/wallet</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/wallet-withdrawal</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/approved-requests</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/cancelled-requests</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.bettingion.com/my-account/wallet-settings</loc>
+  <lastmod>2023-05-30T13:13:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

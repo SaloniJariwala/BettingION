@@ -1,0 +1,190 @@
+$space: (
+  "300": 300px,
+  "200": 200px,
+  "250": 250px,
+  "150": 150px,
+  "120": 120px,
+  "100": 100px,
+  "80": 80px,
+  "70": 70px,
+  "60": 60px,
+  "50": 50px,
+  "40": 40px,
+  "30": 30px,
+  "20": 20px,
+  "15": 15px,
+  "10": 10px,
+  "0": 0px,
+);
+
+@each $name, $size in $space {
+  .mt_#{$name} {
+    margin-top: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .mb_#{$name} {
+    margin-bottom: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .my_#{$name} {
+    margin-top: $size !important;
+    margin-bottom: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .ml_#{$name} {
+    margin-left: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .mr_#{$name} {
+    margin-right: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .mx_#{$name} {
+    margin-left: $size !important;
+    margin-right: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .pt_#{$name} {
+    padding-top: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .pb_#{$name} {
+    padding-bottom: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .py_#{$name} {
+    padding-top: $size !important;
+    padding-bottom: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .pl_#{$name} {
+    padding-left: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .pr_#{$name} {
+    padding-right: $size !important;
+  }
+}
+
+@each $name, $size in $space {
+  .px_#{$name} {
+    padding-left: $size !important;
+    padding-right: $size !important;
+  }
+}
+
+.row {
+  @each $name, $size in $space {
+    &.g_#{$name} {
+      --bs-gutter-x: #{$size};
+      --bs-gutter-y: #{$size};
+    }
+  }
+}
+
+$space-md-mobile: (
+  "300": 160px,
+  "200": 150px,
+  "250": 200px,
+  "100": 80px,
+  "150": 100px,
+  "80": 40px,
+);
+
+@media (max-width: 1199px) {
+  @each $name, $size in $space-md-mobile {
+    .mt_#{$name} {
+      margin-top: $size !important;
+    }
+  }
+
+  @each $name, $size in $space-md-mobile {
+    .mb_#{$name} {
+      margin-bottom: $size !important;
+    }
+  }
+
+  @each $name, $size in $space-md-mobile {
+    .my_#{$name} {
+      margin-top: $size !important;
+      margin-bottom: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .ml_#{$name} {
+      margin-left: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .mr_#{$name} {
+      margin-right: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .mx_#{$name} {
+      margin-left: $size !important;
+      margin-right: $size !important;
+    }
+  }
+
+  @each $name, $size in $space-md-mobile {
+    .pt_#{$name} {
+      padding-top: $size !important;
+    }
+  }
+
+  @each $name, $size in $space-md-mobile {
+    .pb_#{$name} {
+      padding-bottom: $size !important;
+    }
+  }
+
+  @each $name, $size in $space-md-mobile {
+    .py_#{$name} {
+      padding-top: $size !important;
+      padding-bottom: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .pl_#{$name} {
+      padding-left: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .pr_#{$name} {
+      padding-right: $size !important;
+    }
+  }
+
+  @each $name, $size in $space {
+    .px_#{$name} {
+      padding-left: $size !important;
+      padding-right: $size !important;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Block all crawlers for /my-account
+User-agent: *
+Disallow: /my-account
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://www.bettingion.com/sitemap.xml

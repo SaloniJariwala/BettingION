@@ -1,0 +1,187 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin align_center($alignment) {
+    display: flex;
+    justify-content: $alignment;
+    align-items: center;
+    height: 100%;
+}
+
+@mixin after_before($width: 100%, $height: 100%) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $height;
+}
+
+@mixin buttonDefault($bg: transparent, $border: none) {
+    background: $bg;
+    outline: none;
+    border: $border;
+    cursor: pointer;
+}
+
+@mixin shadow($color: var(--primary_color), $blur: 10px) {
+    filter: drop-shadow(0px 0px $blur $color);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+@mixin text_shadow {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@mixin button_group($gap: 10px) {
+    display: flex;
+    gap: $gap;
+}
+
+@mixin textOverflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+@mixin white_img {
+    filter: brightness(0) invert(1);
+}
+
+@mixin line_clamp($line: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin menu_icon_shadow(
+    $filter: drop-shadow(0px -18px 5px rgba(55, 100, 235, 0.01)) drop-shadow(0px -11px 4px rgba(55, 100, 235, 0.06)) drop-shadow(0px -6px 4px rgba(55, 100, 235, 0.2))
+        drop-shadow(0px -3px 3px rgba(55, 100, 235, 0.34)) drop-shadow(0px -1px 2px rgba(55, 100, 235, 0.39)) drop-shadow(0px 0px 0px rgba(55, 100, 235, 0.4))
+) {
+    .menu_icons {
+        img {
+            + img {
+                filter: $filter;
+            }
+        }
+    }
+}
+
+@mixin list_item($gap: true) {
+    li {
+        display: inline-block;
+
+        @if $gap == true {
+            margin: 0 10px;
+        } @else {
+            margin: 0 $gap + px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            @content;
+            transition: 0.3s;
+        }
+
+        button {
+            @content;
+        }
+
+        div {
+            @content;
+        }
+    }
+}
+
+@mixin blur_shape($width, $height, $background, $opacity) {
+    .banner_shape {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $width + px;
+        height: $height + px;
+        background: $background;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: $opacity;
+    }
+}
+
+@mixin blur_shape2($top, $left, $width, $height, $background, $opacity) {
+    .banner_shape2 {
+        position: absolute;
+        top: $top;
+        left: $left;
+        width: $width + px;
+        height: $height + px;
+        background: $background;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: $opacity;
+    }
+}
+
+@mixin full_height_sec {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@mixin back_img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin display_screen {
+    @media (width <= 1439px) {
+        @content;
+    }
+}
+
+@mixin large_tablet_screen {
+    @media (width <= 1023px) {
+        @content;
+    }
+}
+
+@mixin tablet_screen {
+    @media (width <= 767px) {
+        @content;
+    }
+}
+
+@mixin large_mobile_screen {
+    @media (width <= 575px) {
+        @content;
+    }
+}
+
+@mixin mobile_screen {
+    @media (width <= 424px) {
+        @content;
+    }
+}
+
+@mixin hide_desktop_show_tablet {
+    @media (width >= #{$large_tablet_screen}px) {
+        @content;
+    }
+}
